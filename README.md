@@ -1,4 +1,3 @@
-# program
 # 3D Scene Reconstruction and Rendering from Multiple Images
 
 
