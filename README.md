@@ -14,12 +14,9 @@ can be found as the intersection of the two projection rays. This process is ref
 Please refer to the following videos to better under what is 3D scene
 reconstruction:
 https://www.youtube.com/watch?v=LrvPhSASBjk (YouTube video)
-https://www.youtube.com/watch?v=sz0UbHvEttI&index=3&list=PL949A942
-2C7FB609F (YouTube video)
-https://www.youtube.com/watch?v=jtyXkuNPpIg&index=5&list=PL949A942
-2C7FB609F (YouTube video)
-https://www.youtube.com/watch?v=ZEztAxeNQRI&index=6&list=PL949A94
-22C7FB609F (YouTube video)
+https://www.youtube.com/watch?v=sz0UbHvEttI&index=3&list=PL949A9422C7FB609F (YouTube video)
+https://www.youtube.com/watch?v=jtyXkuNPpIg&index=5&list=PL949A9422C7FB609F (YouTube video)
+https://www.youtube.com/watch?v=ZEztAxeNQRI&index=6&list=PL949A9422C7FB609F (YouTube video)
 
 
 ## Reference
