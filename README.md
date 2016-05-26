@@ -30,7 +30,15 @@ PhD Thesis, 2008.
 
 
 ## Time Line
-1. 2016-05-19 Create GitHub homepage.
+1. 2016-05-19 建立github网站.
+2. 2015-05-26 阅读参考文献.
+
+## Reference Reading
+
+在《Multi-camera scene reconstruction via graph cuts》一文中，一个经典的问题：如何从任意场景的一系列已知视点图中计算出其三维形状呢？多相机场景重建能很好地解决上述问题，其核心就在于通过图割使能量最小化。首先，我们给出多相机场景重建的能量最小化公式，而最小化的能量能对称地输入图像、合理的处理可视性、保持空间连续性。但是，能量最小化是NP级别难题，而利用图割算法来计算局部的最小化能更好的解决这个问题，最终的实验结果表明方法确实有效。
+
+在《Scene Reconstruction and Visualization from Internet Photo Collections》一文中，
+
 
 ## To Do List
 1. Read papers.
