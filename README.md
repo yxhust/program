@@ -45,19 +45,32 @@ PhD Thesis, 2008.
 本周首先是通过自由门翻墙软件看YOUTUBE视频，了解场景重建，毕竟场景重建可用在很多方面，为后面具体的做准备。经过一段时间的学习，对Matthew Fisher的Scene Reconstruction有一定的了解，下面对Scene Reconstruction进行介绍：
 文中试验、作比较的数据源都是来自 Multi-View Stereo Dataset，而这个数据集是场景重建的标准数据集，而作者采用的两个标准测试集是 the Temple and Dino scenes。那些输入的图片规格都是640x480，并与Yasutaka Furukawa's method（目前最好的算法）的进行比较。
 实验主要有以下几步：
+
 1.Image Calibration，图像校准，输入的是一系列图片，输出的相机位置、方位以及固有参数。
+
 2.Depth Map Construction，深度图重建，输入的是一系列上述校准后的图片，输出的图片中每个像素到物体的距离。
+
 3.Mesh Reconstruction，网格重建，输入的一系列校准图与深度图，输出得到的是物体的网格。
+
 4.Texture Generation，纹理生成，输入的是校准图以及物体的网格，输出得到的是一系列图册和纹理。
+
 基于上述的思路，作者提出一种方法,具体步骤如下：
 1.Assume calibrated images (all standard scene reconstruction datasets are calibrated)
+
 2.Construct initial depth map guesses
+
 3.Until reconstructed mesh does not change:
+
 --Refine all depth maps
+
 --nstruct mesh from depth maps
+
 --oject reconstructed mesh back into images as new depth maps
+
 4.Simplify and smooth mesh
+
 5.Texture mesh
+
 其中，用到了一个函数Photometric Consistency Function，该函数描述如下：
 Given a point x in space and two calibrated images, define a function p(x) between 0 and 1 that is large if x is close to the final surface，也就是说给定空间的一个点以及两个校准图，定义函数p(x）。
 按照上述的流程步骤，一步步走下去，最终得到实验结果。
