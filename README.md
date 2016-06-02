@@ -55,6 +55,7 @@ PhD Thesis, 2008.
 4.Texture Generation，纹理生成，输入的是校准图以及物体的网格，输出得到的是一系列图册和纹理。
 
 基于上述的思路，作者提出一种方法,具体步骤如下：
+
 1.Assume calibrated images (all standard scene reconstruction datasets are calibrated)
 
 2.Construct initial depth map guesses
