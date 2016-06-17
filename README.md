@@ -41,7 +41,7 @@ PhD Thesis, 2008.
 在《Scene Reconstruction and Visualization from Internet Photo Collections》一文中，使用的源就是互联网中数以万计的图片（不同时间、不同地点、不同天气这些图片的集合）。作者提出一个问题,如何利用这些图片来创造我们这个世界的3D图形界面？要解决这个问题，有两个难题必须要考虑到。第一，要重新构造出图片集中的3D场景必须知道所用的图片的拍摄地点，作者提出了一种新的计算机视觉技术来解决这一问题而不需要借助GPS或其他设备，该方法的关键就在于选取小部分图像做预处理。第二，如何构建这些重建图形界面，以及如何提供有效的场景可视化。为了完成这一目的，作者提出两个全新的3D用户界面，其一是Photo Tourism，这个是能提供图片间进行几何操作的3D图片浏览器，放大、缩小、挑选等等；其二是Pathfinder，其原理利用的是人们更倾向于在名胜古迹拍照，因此Pathfinder能通过分析照片得知所在的位置进而获取导航控件，而这些控件能很轻松的找到每个图片场景的重要部分。
 解决了以上两个问题，利用这些技术可以构建系统能够对名胜古迹的3D场景自动构造，用户只需要输入简单的输入几个关键词，系统就会自动的系在图片、重建、获取导航控件，最后提供改良的界面。
 
-## 2016.5.26--2015.6.2
+## 2016.5.26--2016.6.2
 本周首先是通过自由门翻墙软件看YOUTUBE视频，了解场景重建，毕竟场景重建可用在很多方面，为后面具体的做准备。经过一段时间的学习，对Matthew Fisher的Scene Reconstruction有一定的了解，下面对Scene Reconstruction进行介绍：
 文中试验、作比较的数据源都是来自 Multi-View Stereo Dataset，而这个数据集是场景重建的标准数据集，而作者采用的两个标准测试集是 the Temple and Dino scenes。那些输入的图片规格都是640x480，并与Yasutaka Furukawa's method（目前最好的算法）的进行比较。
 实验主要有以下几步：
@@ -76,6 +76,16 @@ PhD Thesis, 2008.
 Given a point x in space and two calibrated images, define a function p(x) between 0 and 1 that is large if x is close to the final surface，也就是说给定空间的一个点以及两个校准图，定义函数p(x）。
 按照上述的流程步骤，一步步走下去，最终得到实验结果。
 该方法的CPU耗用极低，用GPU非常迅速，Furukawa用了10小时进行全程测试，而此方法生成网格只需15分钟。
+
+
+##2016.6.3--2016.6.12
+![image](https://github.com/yxhust/project/raw/master/screenshots/workspace.jpg)
+
+
+
+##2016.6.13--2016.6.18
+
+
 
 
 
