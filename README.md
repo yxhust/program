@@ -79,7 +79,7 @@ Given a point x in space and two calibrated images, define a function p(x) betwe
 
 
 ##2016.6.3--2016.6.12
-![image](https://github.com/yxhust/project/raw/master/screenshots/workspace.jpg)
+![image](https://github.com/yxhust/program/1.png)
 
 
 
