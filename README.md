@@ -80,9 +80,13 @@ Given a point x in space and two calibrated images, define a function p(x) betwe
 
 ##2016.6.3--2016.6.12
 ![图片工作界面](https://github.com/yxhust/program/blob/master/工作界面.png)
+
 ![图片1](https://github.com/yxhust/program/blob/master/1.png)
+
 ![图片2](https://github.com/yxhust/program/blob/master/2.png)
+
 ![图片3](https://github.com/yxhust/program/blob/master/3.png)
+
 ![图片4](https://github.com/yxhust/program/blob/master/4.png)
 
 
