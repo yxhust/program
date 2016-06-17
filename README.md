@@ -79,19 +79,43 @@ Given a point x in space and two calibrated images, define a function p(x) betwe
 
 
 ##2016.6.3--2016.6.12
+
+经过阅读文献，并在网上查找资料，最终我们组的重建方案是，利用双目视觉图片（网上下载）进行3D场景重建，图像源为一张图的双目图，简单的话可以理解为左右试图，下面一步步从最终结果介绍重建思路以及过程。
+1.平台工具
+电脑采用win7 64操作系统，工具为VS2012,另外使用OPENCV计算机视觉库以及OPENGL图形程序接口，工作界面如下图所示。
 ![图片工作界面](https://github.com/yxhust/program/blob/master/工作界面.png)
 
+2.计算特征匹配
+对于双目图片，在真实世界中为同一张图，找出对应点，运用OPENCV里面的库算法来完成，结果如下图。
 ![图片1](https://github.com/yxhust/program/blob/master/1.png)
 
+3.计算三维坐标
+上面找到了匹配点，接下来需要计算真实世界中图片的3D坐标，用到的是投影原理，结果如下图。
 ![图片2](https://github.com/yxhust/program/blob/master/2.png)
 
+4.三角剖分
+将双目视图中的一张进行三角剖分，得到很多三角块，用于最终的立体场景重建，三角剖分结果如下图。
 ![图片3](https://github.com/yxhust/program/blob/master/3.jpg)
 
+5.3D重建
+前面的准备工作就绪之后，最终利用OPENGL里面的函数进行纹理贴图得到重建结果图，如下所示
 ![图片4](https://github.com/yxhust/program/blob/master/4.png)
 
 
 
 ##2016.6.13--2016.6.18
+上周已经完成了主要工作，本周就是对代码进行整理确保不出错。
+另外完成readme的编写，以及最后一次课上的presentation ppt和demo的制作。
+
+成员分工如下：
+
+贺鹏飞—特征点匹配、计算三维坐标
+
+易旭—三角剖分、3D重建
+
+
+代码连接如下：
+链接: http://pan.baidu.com/s/1gfoEooz 密码: 7xuv
 
 
 
