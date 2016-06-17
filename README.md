@@ -30,9 +30,11 @@ PhD Thesis, 2008.
 
 
 ## Time Line
-1. 2016-05-19 建立github网站.
-2. 2015-05-26 阅读参考文献.
-3. 2015-06-02确定重建场景的目标，并找到方法。
+1. 2016-05-19 建立github网站。
+2. 2016-05-26 阅读参考文献。
+3. 2016-06-02更进一步了解场景重建。
+4. 2016-06-12利用双目视觉图片结合OPENCV、OPENGL进行3D场景重建。
+5. 2016-06-18对最终的结果进行整理并实验不出错，代码及分工都有说明。
 
 ## Reference Reading
 
@@ -81,6 +83,7 @@ Given a point x in space and two calibrated images, define a function p(x) betwe
 ##2016.6.3--2016.6.12
 
 经过阅读文献，并在网上查找资料，最终我们组的重建方案是，利用双目视觉图片（网上下载）进行3D场景重建，图像源为一张图的双目图，简单的话可以理解为左右试图，下面一步步从最终结果介绍重建思路以及过程。
+
 1.平台工具
 电脑采用win7 64操作系统，工具为VS2012,另外使用OPENCV计算机视觉库以及OPENGL图形程序接口，工作界面如下图所示。
 ![图片工作界面](https://github.com/yxhust/program/blob/master/工作界面.png)
@@ -124,7 +127,4 @@ Given a point x in space and two calibrated images, define a function p(x) betwe
 
 
 
-## To Do List
-1. Read papers.
-2. Do some experiments.
-3. Use Matthew Fisher's method to complete scene reconstruction.
+
