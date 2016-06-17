@@ -85,7 +85,7 @@ Given a point x in space and two calibrated images, define a function p(x) betwe
 
 ![图片2](https://github.com/yxhust/program/blob/master/2.png)
 
-![图片3](https://github.com/yxhust/program/blob/master/3.png)
+![图片3](https://github.com/yxhust/program/blob/master/3.jpg)
 
 ![图片4](https://github.com/yxhust/program/blob/master/4.png)
 
